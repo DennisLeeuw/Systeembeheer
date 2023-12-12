@@ -1,0 +1,21 @@
+Een lijst met elementen heet in YAML een \textquote{sequence}. In andere talen wordt een sequence ook wel een list of een array genoemd.
+
+Een sequence begint met een dash, min-teken, en daarna een spatie, waarna de waarde volgt.
+
+Zo kunnen we bijvoorbeeld een sequence aanmaken met servers in ons netwerk:
+\begin{verbatim}
+---
+servers:
+  - srv01
+  - srv02
+  - srv03
+...
+\end{verbatim}
+
+Je mag een sequence ook in 1 regel beschrijven:
+\begin{verbatim}
+---
+servers: [ "srv01", "srv02", "srv03" ]
+...
+\end{verbatim}
+

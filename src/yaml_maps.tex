@@ -1,0 +1,62 @@
+Een \textquote{Map} is niets ander dan een lijst van key/value-pairs. Maps worden ook wel dictionaries genoemd. Aan onze lijst van machines voegen we een dictionary toe met de IP-netwerk configuratie:
+\begin{verbatim}
+---
+servers:
+  - srv01:
+    ip: 192.168.42.11
+    subnetmask: 255.255.255.0
+    def_gateway: 192.168.42.1
+  - srv02:
+    ip: 192.168.42.12
+    subnetmask: 255.255.255.0
+    def_gateway: 192.168.42.1
+clients:
+  - clt01:
+    ip: 192.168.42.101
+    subnetmask: 255.255.255.0
+    def_gateway: 192.168.42.1
+  - clt02:
+    ip: 192.168.42.102
+    subnetmask: 255.255.255.0
+    def_gateway: 192.168.42.1
+...
+\end{verbatim}
+Aan het eind van de naam van de machine is nu een dubbele punt gekomen om aan te geven dat er meer informatie komt die bij de machine hoort. Die extra informatie is gegeven als een set mappings tesamen vormen ze de dictionary.
+
+We kunnen lijsten en dictionaries eindeloos combineren:
+\begin{verbatim}
+---
+servers:
+  - srv01:
+    ip: 192.168.42.11
+    subnetmask: 255.255.255.0
+    def_gateway: 192.168.42.1
+    nameservers:
+      - 192.168.42.2
+      - 192.168.42.3
+  - srv02:
+    ip: 192.168.42.12
+    subnetmask: 255.255.255.0
+    def_gateway: 192.168.42.1
+    nameservers:
+      - 192.168.42.2
+      - 192.168.42.3
+clients:
+  - clt01:
+    ip: 192.168.42.101
+    subnetmask: 255.255.255.0
+    def_gateway: 192.168.42.1
+    nameservers:
+      - 192.168.42.2
+      - 192.168.42.3
+  - clt02:
+    ip: 192.168.42.102
+    subnetmask: 255.255.255.0
+    def_gateway: 192.168.42.1
+    nameservers:
+      - 192.168.42.2
+      - 192.168.42.3
+...
+\end{verbatim}
+Aan de lijst van machines hebben we in de dictionary voor elke machine een nameservers list toegevoegd. De lijst bevat de IP-adressen van de door ons gebruikt nameservers.
+
