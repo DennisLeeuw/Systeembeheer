@@ -1,0 +1,8 @@
+Orchestration maakt het mogelijk om verschillende machines te beheren waarbij bijvoorbeeld afhankelijkheden worden meegenomen. Een server kan zo vanaf scratch opgebouwd worden door de orchestration software. Eerst wordt het OS ge\"installeerd en als dat klaar is kan er bijvoorbeeld de webserver software ge\"installeerd worden. Is de webserver goed ge\"installeerd dan kunnen de verschillende configuraties voor de verschillende websites op de server gedownload worden.
+
+Op een beheerstation (meestal de desktop van de systeembeheerder) wordt aan de orchestration software verteld wat er allemaal nodig is 1 of meerdere servers in te richten en up-to-spec te houden. Up-to-spec is dat de orchestration software ervoor zorgt dat de configuratie blijft zoals deze beschreven is. Als een beheerder dus op de machine zelf de configuratie wijzigt dan zal de orchestration software die wijzigingen weer terug zetten naar zoals dat door de beheerder eerder in de orchestration software bescherven is.
+
+Dit alles kan gedaan worden door remote commando's te laten uitvoeren door de orchestration software. Dit kan bijvoorbeeld via SSH, maar de orchestration software kan ook een eigen client hebben die eerst op de machine ge\"installeerd moet worden waarbij er tussen de client en de server (LET OP: het beheerstation is nu de server geworden, ondanks dat het waarschijnlijk een desktop machine is) een eigen taal gebruikt wordt om te zorgen dat de client gaat doen wat de server wil.
+
+De meest bekende tool is waarschijnlijk Ansible. Andere opties zijn Puppet, Chef, Salt Stack en nog vele anderen. Wij zullen alleen Ansible behandelen.
+
