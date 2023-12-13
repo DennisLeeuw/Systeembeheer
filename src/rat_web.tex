@@ -1,6 +1,0 @@
-De makkelijkste en waarschijnlijk de bekendste manier is het configureren van bijvoorbeeld een access point of router via een web-interface. Je logt in met een gebruikersnaam en wachtwoord op een website en krijgt via die website toegang tot de configuratie van het apparaat.
-
-Vanuit beveiligingsoogpunt is het van belang dat de website gebruik maakt van HTTPs. HTTP is ongeencrypt verkeer, dat houdt in dat alle data in leesbare tekst over de lijn gaat, dus ook je gebruikersnaam en wachtwoord. Iemand die meeluistert op de lijn kan deze gegevens dus zien en kan met jouw credentials het apparaat gebruiken. Dus moet je altijd HTTPs gebruiken, die encrypt de data die over de lijn gaat waardoor jouw credentials niet voor anderen leesbaar zijn.
-
-Mocht je een nieuwe apparaat hebben dat niet met HTTPs werkt, log dan in met de meegeleverde credentials, zet de webserver op HTTPs (eventueel met een selfsigned certificate) en wijzig daarna alle wachtwoorden. Eventuele gelekte wachtwoorden zijn dan niet meer te gebruiken en de nieuwe wachtwoorden kunnen niet meer gelekt worden.
-
