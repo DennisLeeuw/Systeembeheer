@@ -1,0 +1,45 @@
+Stel we hebben een binair getal 11001110 en we willen weten wat het getal decimaal is. Om binaire getallen om te zetten naar decimaal is er een simpele reken opdracht met machten. Het binaire stelsel kent twee getallen, elke positie in het getal kunnen we weergeven met 2 tot de macht. De macht is dan de waarde van de positie van het bit gerekend vanaf rechts. Om dit wat duidelijker te maken kijken we eerst naar het decimale stelsel, daar ben je wat beter mee vertrouwd.
+
+Het getal honderd is eigenlijk
+\begin{math}
+	10^2
+\end{math}
+want
+\begin{math}
+	10*10=100
+\end{math}
+zo is 10 eigenlijk
+\begin{math}
+	10^1
+\end{math}
+en de getallen onder de 10 zijn eigenlijk
+\begin{math}
+	10^0
+\end{math}
+want
+\begin{math}
+	10^0=1
+\end{math}
+.
+
+Een getal als 145 kunnen we dus schrijven als
+\begin{math}
+	1*10^2 + 4*10^1 + 5*10^0
+\end{math}
+. Deze logica kunnen we ook gebruiken bij het omzetten van binair naar decimaal.
+
+
+In een binair systeem werken we met een tweetallig stelsel, dus met 2 tot de macht. Ons getal 11001110 kunnen we dus schrijven als:
+\begin{math}
+	1*2^7 + 1*2^6 + 0*2^5 + 0*2^4 + 1*2^3 + 1*2^2 + 1*2^1 + 0*2^0
+\end{math}
+Omdat vermenigvuldigen met 0 0 is en vermenigvuldigen met 1 hetzelfde getal oplevert kunnen we het geheel dus nog veel simpeler maken:
+\begin{math}
+	2^7 + 2^6 + 2^3 + 2^2 + 2^1
+\end{math}
+. Dit sommetje wordt dus uiteindelijk een simpele optelling:
+\begin{math}
+	128 + 64 + 8 + 4 + 2 = 206
+\end{math}
+En daarmee hebben we binair 11001110 naar decimaal 206.
+

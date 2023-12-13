@@ -1,0 +1,17 @@
+Om een decimaal getal om te zetten naar decimaal moeten we van een 10-talig stelsel naar een 2-talig stelsel. Het makkelijkst kunnen we dat doen door te delen door 2. We delen het decimale getal dus steeds door 2 tot we op 0 zijn uitgekomen. Elke keer dat het lukt om door 2 te delen (zonder een breuk te maken) noteren we een 0, als het niet trekken we 1 van het (oneven) getal af en noteren deze 1. Daarna kunnen we het nieuwe evengetal weer delen. De genoteerde nullen en enen levert ons het binaire getal op dat we zoeken. Hieronder volgt een voorbeeld hoe we 1000 decimaal omzetten naar binair:
+
+\begin{tabular} { l r r c }
+Bit 1: & 1000 / 2 & 500 & 0 \\
+Bit 2: & 500 / 2 & 250 & 0 \\
+Bit 3: & 250 / 2 & 125 & 0 \\
+Bit 4: & 125 / 2 & 62 & 1 \\
+Bit 5: & 62 / 2 & 31 & 0 \\
+Bit 6: & 31 / 2 & 30 & 1 \\
+Bit 7: & 15 / 2 & 14 & 1 \\
+Bit 8: & 7 / 2 & 6 & 1 \\
+Bit 9: & 3 / 2 & 2 & 1 \\
+Bit 10: & 1 / 2 & 0 & 1 \\
+\end{tabular}
+
+Ons binaire getal noteren we van onder naar boven(!) dus als 1111101000.
+

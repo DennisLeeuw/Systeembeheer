@@ -1,0 +1,20 @@
+Het vermenigvuldigen van binaire getallen is niets relatief simpel, vandaar dat computers ook zulke goede rekenaars zijn. Vermenigvuldigen is schuiven en optellen. Het is waarschijnlijk het makkelijkst met een voorbeeld:
+
+\begin{center}
+\begin{tabular}{ r l }
+      11001110 & \\
+      01000101 & x\\
+\hline
+      11001110 & \\
+     000000000 & \\
+    1100111000 & \\
+   00000000000 & \\
+  000000000000 & \\
+ 0000000000000 & \\
+11001110000000 & + \\
+\hline
+11011110000110
+\end{tabular}
+\end{center}
+
+Voor elk bit uit het getal waarmee we vermenigvuldigen schuift het getal dat vermenigvuldigt wordt op naar links en krijgt er een 0 achter. Heeft het getal waarmee we vermenigvuldigen een 1 staan dan kom het opgeschoven getal er te staan, staat er een 0 van is de opteller allemaal nullen, kortom er gebeurt niets.
