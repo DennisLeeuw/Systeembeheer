@@ -1,0 +1,8 @@
+Een backup van alle data op een andere plek heet een full-backup. De meeste gebruikers werken niet elke dag aan alle documenten, maar slechts aan enkele. Als we wel elke dag alle data kopi\"eren doen we feitelijk te veel. We kunnen bezuinigen op de hoeveelheid data door alleen de gewijzigde data te kopi\"eren. We winnen zo op de ruimte die de data inneemt en ook op de tijd die het duurt om een backup te maken. Een backup van alleen de data die gewijzigd is heet een incremental-backup.
+
+Bij een calamiteit waarbij de originele datadrager verloren gaat kost het terug zetten van de data meer tijd. Want eerst moet de full-backup terug gezet worden en daarna elke incremental die we hebben, omdat die de laatste wijzigingen bevatten.
+
+Een tussen oplossing is het maken van een full-backup, daarna een aantal incrementals en dan een differential-backup. Een differential backup is feitelijk een samenvatting van de tussen liggende incrementals. Kortom de bestanden die gewijzigd zijn vanaf het moment dat er voor de laatste keer een full-backup is gemaakt worden weggeschreven op de differential. Dit heeft als voordeel dat bij een calamiteit de full-backup terug gezet moet worden, de differential en eventueel de daarna gekomen incrementals, maar niet meer de incrementals die tussen de full-backup en de differential zaten.
+
+Veel bedrijven maken gebruik van deze oplossing. Op zondag wordt er een full-backup gemaakt want dan wordt er niet gewerkt en is dus alle tijd om een volledige backup van alle data te maken. Op maandag en dinsdag worden er incrementals gemaakt en op woensdag een differential, waarna er op donderdag, vrijdag en zaterdag weer incrementals volgen.
+
