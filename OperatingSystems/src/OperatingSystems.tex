@@ -55,7 +55,7 @@
 % Define document
 \author{D. Leeuw}
 \title{Operating Systems}
-\date{\today\\v.0.6.0}
+\date{\today\\v.0.7.0}
 
 \begin{document}
 \selectlanguage{dutch}
@@ -95,6 +95,9 @@
 \input{src/os_intro}
 %\section{Een stukje geschiedenis}
 
+\chapter{Computer hardware}
+\input{src/cpu_memory_storage}
+
 % Requires: Kennis van hardware
 % Provides: Basis OS
 \chapter{Bootstrapping / Booting}
@@ -117,6 +120,12 @@
 \input{src/os-gui.tex}
 \section{Desktop}
 \input{src/desktop.tex}
+
+\chapter{Services}
+\input{src/services}
+
+\chapter{Filesystems}
+\input{src/bestandssysteem}
 
 %%%%%%%%%%%%%%%%%%%%%
 %%% Index and End %%%
