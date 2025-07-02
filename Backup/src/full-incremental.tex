@@ -4,5 +4,5 @@ Bij een calamiteit waarbij de originele datadrager verloren gaat kost het terug 
 
 Een tussen oplossing is het maken van een full-backup, daarna een aantal incrementals en dan een differential-backup. Een differential backup is feitelijk een samenvatting van de tussen liggende incrementals. Kortom de bestanden die gewijzigd zijn vanaf het moment dat er voor de laatste keer een full-backup is gemaakt worden weggeschreven op de differential. Dit heeft als voordeel dat bij een calamiteit de full-backup terug gezet moet worden, de differential en eventueel de daarna gekomen incrementals, maar niet meer de incrementals die tussen de full-backup en de differential zaten.
 
-Veel bedrijven maken gebruik van deze oplossing. Op zondag wordt er een full-backup gemaakt want dan wordt er niet gewerkt en is dus alle tijd om een volledige backup van alle data te maken. Op maandag en dinsdag worden er incrementals gemaakt en op woensdag een differential, waarna er op donderdag, vrijdag en zaterdag weer incrementals volgen.
+Veel bedrijven maken gebruik van deze oplossing. Op zondag wordt er een full-backup gemaakt want dan wordt er niet gewerkt en is er dus alle tijd om een volledige backup van alle data te maken. Op maandag en dinsdag worden er incrementals gemaakt en op woensdag een differential, waarna er op donderdag, vrijdag en zaterdag weer incrementals volgen.
 
