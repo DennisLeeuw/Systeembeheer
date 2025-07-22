@@ -1,0 +1,5 @@
+https://www.youtube.com/watch?v=2n7t91kGEPU
+GodMode.{ED7BA470-8E54-465E-825C-99712043E01C}
+
+Leg uit dat steeds meer config stuff verplaatst wordt van Control Panel naar Settings en Group Policy Editor
+	Transitie is begonnen in Windows 10, maar nog niet klaar
