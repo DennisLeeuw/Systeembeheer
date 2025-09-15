@@ -1,4 +1,4 @@
-1. Windows structuur
+1. Windows System
 	OS
 	API
 	Mappen Windows, Users, Apps
@@ -7,7 +7,7 @@
 	Root-directory
 	Drive letters
 
-2. Configuratie
+2. Windows Configuratie
 	Settings
     Control panel
     Advanced System Settings
@@ -16,7 +16,7 @@
 	God Mode
 	WB: ipconfig - powershell?
 
-3. Logging / troubleshooting
+3. Windows Troubleshooting
     System Information
     Task Manager (What's runnning)
 	Event Viewer + filters (logs)
